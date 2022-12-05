@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>prac 11</title>
+    <style>
+        :root {
+            --font-sans: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans- serif;
+        }
+
+        p {
+        font-family: var(--font-sans);
+        font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var array = [10, 0, 1, 27, 6, 7]; array.sort(); document.write("sorted array : ");
+
+        for (let i = 0; i < array.length; i++) {
+            document.write(array[i] + "");
+
+            let newArray = array.join("-"); document.write("joined array : ");
+            for (let i = 0; i < newArray.length; i++) {
+                document.write(newArray[i] + "");
+            }
+            document.write("<br>"); let arr = array;
+            document.write("last index of 8 is " + array.lastIndexOf(8)); document.write("<br>");
+            document.write("first index of 4 is " + array.indexOf(4)); document.write("<br>");
+            array.pop();
+            document.write("last element deleted : "); for (let i = 0; i < array.length; i++) {
+                document.write(array[i] + "");
+            }
+            document.write("<br>"); array.push(0);
+            document.write("new element inserted : "); for (let i = 0; i < array.length; i++) {
+                document.write(array[i] + "");
+            }
+            document.write("<br>"); document.write("array after concating"); let concatArray = [10, 11, 12];
+            var newArr = array.concat(concatArray); for (let i = 0; i < newArr.length; i++) {
+                document.write(newArr[i] + "");
+
+                document.write("print index of 11 : "); document.write(newArr.valueOf(11)); document.write("<br>"); newArr.reverse();
+                document.write("array after reversing : "); for (let i = 0; i < newArr.length; i++) {
+                    document.write(newArr[i]) + "";
+                }
+                document.write("<br>"); newArr.shift();
+                document.write("array after shifting : "); for (let i = 0; i < newArr.length; i++) {
+                    document.write(newArr[i] + "");
+                }
+                document.write("<br>"); newArr.unshift(13); document.write("array after unshifting : "); for (let i = 0; i < newArr.length; i++) {
+                    document.write(newArr[i] + "");
+                }
+                document.write("<br>"); newArr.toString();
+                document.write("converting array into string : "); for (let i = 0; i < newArr.length; i++) {
+                    document.write(newArr[i] + "");
+                }
+                document.write("<br>");
+
+                document.write("spliced array : " + newArr.splice(1)); document.write("<br>");
+                document.write("sliced array : " + newArr.slice(1)); document.write("<br>");
+                document.write("date object use\n\n\n"); let newDate = new Date();
+                let date = newDate.getDate();
+                let month = newDate.getMonth(); let year = newDate.getFullYear(); let hour = newDate.getHours();
+                let minute = newDate.getMinutes(); let second = newDate.getSeconds();
+                document.write(date + ":" + (month + 1) + ":" + year + ":" + hour + ":" + minute + ":" + second);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Lab 11..
+        
+        var arr=[5,2,8,1,4];
+        arr.sort();
+        console.log("Sorted Array");
+        for(let i=0;i<arr.length;i++){
+            console.log(arr[i]);
+        }
+        var array = arr.join("and");
+        console.log("Array after join function");
+        for(let i=0;i<array.length;i++){
+            console.log(array[i]);
+        }
+        console.log("last index of number is : "+arr.lastIndexOf(8));
+        arr.pop();
+        console.log("Array after pop function");
+        for(let i=0;i<arr.length;i++){
+            console.log(arr[i]);
+        }
+        arr.push(21);
+        console.log("Array after push function");
+        for(let i=0;i<arr.length;i++){
+            console.log(arr[i]);
+        }
+        var newArr = [31,11,35,17];
+        var concatArray =arr.concat(newArr);
+        console.log("Array after concating");
+        for(let i=0;i<concatArray.length;i++){
+            console.log(concatArray[i]);
+        }
+        console.log("value of number :"+arr.valueOf(21));
+        arr.reverse();
+        console.log("Reverse Array");
+        for(let i=0;i<arr.length;i++){
+            console.log(arr[i]);
+        }
+        arr.shift();
+        console.log("Array after shift function");
+        for(let i=0;i<arr.length;i++){
+            console.log(arr[i]);
+        }
+        arr.unshift(58);
+        console.log("Array after unshift function");
+        for(let i=0;i<arr.length;i++){
+            console.log(arr[i]);
+        }
+        arr.toString();
+        console.log("array to string");
+        for(let i=0;i<arr.length;i++){
+            console.log(arr[i]);
+        }
+
+        // Lab 15....
+
+        let NewDate = new Date();
+        let Year = NewDate.getFullYear();
+        let Month = NewDate.getMonth();
+        let Day = NewDate.getDate();
+        let Hours = NewDate.getHours();
+        let Minutes = NewDate.getMinutes();
+        let Second = NewDate.getSeconds();
+        console.log("date object : "+Day+":"+(Month+1)+":"+Year+":"+Hours+":"+Minutes+":"+Second);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Enter starting range..");
+        var b = prompt("Enter ending range..");
+        var f=1,i,x=2; 
+        for(i=a;i<=b;i++)
+        {
+            for(x=2;x<i;x++)
+            {
+                if(i%x==0){
+                    f=0;
+                    break;
+                }
+            }
+            if(f==1){
+                console.log(x+" ");
+            }f=1;
+        }
+    </script>
+</body>
+</html>

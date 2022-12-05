@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <label for="a">Enter a Number</label>
+        <input type="text" id="a" placeholder="Enter a Number">
+        <br><br>
+        <button type="submit" onclick="Palindrome()">Palindrome Checker</button>
+        <input type="text" id="result">
+    <script>
+        function Palindrome(){
+        var s = parseInt(document.getElementById("a").value);
+        var x = s,rem,res=0;
+        while(x!=0){
+            rem = parseInt(x%10);
+            res = parseInt(res*10 + rem);
+            x = parseInt(x/10);
+        }
+        console.log(res);
+        if(res==s){
+            document.getElementById("result").value = "Yes";
+        }
+        else {
+            document.getElementById("result").value = "No";
+        }
+        
+        }
+            
+    </script>
+</body>
+</html>

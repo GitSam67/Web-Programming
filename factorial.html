@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <label for="a">Enter a number</label>
+        <input type="text" id="a" placeholder="Enter a number">
+        <br><br>
+        <button type="submit" onclick="fact()">Find fact</button>
+        <input type="text" id="result">
+    <script>
+        function fact(){
+        var i,res=1;
+        var a = parseInt(document.getElementById("a").value);
+        if(a==0 || a==1){
+            document.getElementById("result").value = "1";
+        }
+        for(i=2;i<=a;i++){
+            res=res*i;
+        }
+        document.getElementById("result").value = res;
+        
+        }
+            
+    </script>
+</body>
+</html>

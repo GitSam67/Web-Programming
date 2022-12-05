@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<style>
+    #enrollment {
+        margin-top: 10px;
+    }
+
+    #course {
+        height: 25px;
+    }
+</style>
+
+<body>
+    <h2>
+        Student Registration Form
+    </h2>
+    <hr>
+    <div id="container">
+        <label style="font-weight: bold;" for="name">Name :</label>
+        <input type="text" class="input">
+        <br>
+        <br>
+        <label style="font-weight: bold;" id="enrollment" for="enrollment-number">Enrollment Number: </label>
+        <input type="number" class="input">
+        <br>
+        <br>
+        <label style="font-weight: bold;" for="email">Email ID:</label>
+        <input type="email" class="input">
+        <br>
+        <br>
+        <label style="font-weight: bold" for="number">Mobile Number:</label>
+        <input type="number" class="input">
+        <br>
+        <br>
+        <label style="font-weight: bold" for="gender">Gender:</label>
+        <input type="radio" id="r1" name="1" class="input">Male
+        <input type="radio" id="r2" name="1" class="input">Female
+        <input type="radio" id="r3" name="1" class="input">Other
+        <br>
+        <br>
+        <label style="font-weight: bold" for="course">Course:</label>
+        <select name="course" id="course" class="input">
+            <option value="CSE">CSE</option>
+            <option value="CSEAI">CSE-AI</option>
+            <option value="CSEBDA">CSE-BIGDATA</option>
+            <option value="CSEIOT">CSE-IOT</option>
+            <option value="CSECYBER">CSE-CYBER</option>
+        </select>
+        <br>
+        <br>
+        <button class="submit" id="submit">Submit</button>
+    </div>
+</body>
+
+</html>

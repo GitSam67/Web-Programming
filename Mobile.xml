@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Mobile.xsl"?>
+
+<Mobile>
+    <m>
+        <model> iPhone </model> 
+        <storage> ram: 8gb, rom: 128gb</storage> 
+        <battery> 3000 mAh</battery> 
+        <camera> 20 MP</camera>
+    </m>
+    <m>
+        <model> Redmi</model> 
+        <storage> ram:6gb, rom:128gb</storage> 
+        <battery> 6000 mAh</battery> 
+        <camera> 50 MP</camera>
+    </m>
+    <m>
+        <model> Samsung</model> 
+        <storage> ram:8gb, rom:64gb</storage> 
+        <battery> 5000 mAh</battery> 
+        <camera> 48 MP</camera>
+    </m>
+    <m>
+        <model> One PLus</model> 
+        <storage> ram:6gb, rom:128gb</storage> 
+        <battery> 5000 mAh</battery> 
+        <camera> 64 MP</camera>
+    </m>
+</Mobile>

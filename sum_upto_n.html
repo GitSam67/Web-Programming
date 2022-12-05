@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum upto N</title>
+</head>
+<body>
+    <label for="a">Enter a number</label>
+        <input type="text" id="a" placeholder="Enter a number">
+        <br><br>
+        <button type="submit" onclick="Sum()">Sum</button>
+        <input type="text" id="result">
+    <script>
+        function Sum(){
+        var s = parseInt(document.getElementById("a").value);
+        var res = s*(s+1)/2;
+        document.getElementById("result").value = res;
+        
+        }
+            
+    </script>
+</body>
+</html>

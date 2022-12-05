@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="w+idth=device-width, initial-scale=1.0">
+<title>Canvas</title>
+</head>
+<body>
+<canvas	style="border:	2px	black	solid;"id="newCanvas"	height="200px" width="200px"></canvas>
+</body>
+<script>
+var c = document.getElementById("newCanvas"); var ctx = c.getContext("2d");
+var grd = ctx.createLinearGradient(0, 0, 250, 0); grd.addColorStop(0, "blue"); grd.addColorStop(1, "white");
+ctx.fillStyle = grd; ctx.fillRect(10, 10, 150, 80);
+</script>
+</script>
+</html>

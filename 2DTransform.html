@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>transformations</title>
+<style>
+.newdiv{
+background-image: radial-gradient(blue,pink); padding: 20px;
+margin:10px; border-radius: 10px;
+}
+</style>
+</head>
+<body>
+<div style="transform:skew(30deg) ;" class="newdiv"> skew</div>
+<br>
+<div class="newdiv" style="transform: skewY(30deg); width: 60px;"> skewY</div>
+<br>
+<br>
+<div style="transform: scale(2.0,2.0);width:80px; height: 80px;" class="newdiv"> scale
+ 
+</div>
+<br>
+<br>
+<br>
+<br>
+<div style="transform:rotate(45deg); width:100px; height: 100px;" class="newdiv"> rotate
+</div>
+
+
+<div class="newdiv" style="transform: matrix(1,-0.3,0,1,0,0); width: 100px;"> matrix
+</div>
+<div class="newdiv" style="transform: translate(25px,25px);"> translate
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic</title>
+</head>
+<body>
+    <label for="t1">Enter 1st number</label>
+    <input type="number" name="t1" id="t1"><br><br>
+    <label for="t2">Enter 2nd number</label>
+    <input type="number" name="t2" id="t2">
+    <br><br>
+    <button type="submit" onclick="add()">Add</button>
+    <button type="submit" onclick="sub()">Sub</button>
+    <button type="submit" onclick="mul()">Multiply</button>
+    <button type="submit" onclick="div()">Division</button>
+    <br><br>
+    <label for="t3">Result</label>
+    <input type="number" name="t3" id="t3">
+
+    <script>
+        function add(){
+        var res1 = document.getElementById("t1").value;
+        var res2 = document.getElementById("t2").value;
+            var result;
+            result = parseInt(res1) + parseInt(res2);
+            document.getElementById("t3").value=result;
+        }
+        function sub(){
+        var res1 = document.getElementById("t1").value;
+        var res2 = document.getElementById("t2").value;
+            var result;
+            result = parseInt(res1) - parseInt(res2);
+            document.getElementById("t3").value=result;
+        }
+        function mul(){
+        var res1 = document.getElementById("t1").value;
+        var res2 = document.getElementById("t2").value;
+            var result;
+            result = parseInt(res1) * parseInt(res2);
+            document.getElementById("t3").value=result;
+        }
+        function div(){
+        var res1 = document.getElementById("t1").value;
+        var res2 = document.getElementById("t2").value;
+            var result;
+            result = (parseFloat(res1) / parseFloat(res2));
+            document.getElementById("t3").value=(result).toFixed(2);
+        }
+    </script>
+</body>
+</html>

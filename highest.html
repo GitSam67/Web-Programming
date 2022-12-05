@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highest</title>
+</head>
+<body>
+    <label for="a">Enter first number</label>
+        <input type="text" id="a" placeholder="Enter first number">
+        <br><br>
+        <label for="b">Enter Second number</label>
+        <input type="text" id="b" placeholder="Enter second number">
+        <br><br>
+        <label for="c">Enter Third number</label>
+        <input type="text" id="c" placeholder="Enter third number">
+        <br><br>
+        <button type="submit" onclick="result()">Find Highest</button>
+        <input type="text" id="result">
+    <script>
+        function result(){
+        var a = parseInt(document.getElementById("a").value);
+        var b = parseInt(document.getElementById("b").value);
+        var c = parseInt(document.getElementById("c").value);
+            if(a>b && a>c){
+                document.getElementById("result").value = a + " is highest";
+            }
+            else if(b>a && b>c){
+                document.getElementById("result").value = b + " is highest";
+            }
+            else{
+                document.getElementById("result").value = c + " is highest";
+            }
+        }
+            
+    </script>
+</body>
+</html>

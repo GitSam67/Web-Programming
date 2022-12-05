@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bmi Index</title>
+</head>
+<body>
+    <p>Enter your Height in (Meters)..</p>
+    <input type="number" id="height">
+    <p>Enter your Weight in (kg)..</p>
+    <input type="number" id="weight">
+    <button type="submit" onclick="BMI()";>Calculate</button>
+    <script>
+        function BMI(){
+        var h = parseFloat(document.getElementById("height").value);
+        console.log(h);
+        var w = parseFloat(document.getElementById("weight").value);
+        var bmi = w/(h*h);
+            if(bmi<15){
+                alert("Your BMI is "+bmi+"\n"+" Very Poor..");
+            }
+            else if(bmi>15 && bmi<20){
+                alert("Your BMI is "+bmi+"\n"+"Need to improve..");
+            }
+            else if(bmi>20 && bmi<25){
+                alert("Your BMI is "+bmi+"\n"+"Healthy..");
+            }
+            else if(bmi>25 && bmi<30){
+                alert("Your BMI is "+bmi+"\n"+"Over Weight....");
+            }
+            else{
+                alert("Your BMI is "+bmi+"\n"+"Obese...");
+            }    
+        }
+    </script>
+</body>
+</html>

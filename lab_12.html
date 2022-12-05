@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Matcher</title>
+</head>
+<body>
+    <p>Enter Week Day..</p>
+    <input type="text" id="day">
+    <button type="submit" onclick="day()">Verify</button>
+    <script>
+        function day(){
+        var i,d;
+        var n = document.getElementById("day").value;
+        console.log(n);
+        var arr = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+        for(i=0;i<arr.length;i++){
+            if(arr[i].toUpperCase()==n.toUpperCase()){
+                d = i+1;
+            }
+        }    
+        var m = new Date().getDay();
+        console.log(m);
+        if(d==m){
+            alert("Hit..");
+        }
+        else{
+            alert("Missed..");
+        }
+    }
+    </script>
+</body>
+</html>

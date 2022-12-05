@@ -1,0 +1,31 @@
+*{
+    box-sizing:border-box;
+    background-color:rgb(168, 198, 254);
+    margin: 10px;
+}
+
+h2{
+    color:rgb(127, 80, 255);
+    margin-left: 300px;
+    font-size:50px;
+}
+
+.input{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.submit{
+    border: 2px solid grey;
+    color:black;
+    border-radius: 4px;
+    background-color:rgb(217, 196, 255);
+}
+
+#container{
+    width: 40%;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    font-size:large;
+}
